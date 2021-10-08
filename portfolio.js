@@ -7,7 +7,7 @@ function closeForm() {
     document.getElementById("myForm").style.display = "none";
 }
 
-// This function displays the first image in the slideshow when the page loads
+// This function displays first image in the slideshow when the page loads
 var slideIndex = 1;
 showSlides(slideIndex);
 

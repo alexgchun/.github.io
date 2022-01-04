@@ -52,6 +52,10 @@ span {
   color: black;
 }
 
+.icons a {
+  color: #000;
+}
+
 /* .icons {
   width: 100%;
   display: flex;

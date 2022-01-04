@@ -1,184 +1,44 @@
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="./index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<title>Alex Chun's Portfolio Website</title>
+<script src="https://kit.fontawesome.com/69a4a2f89d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="front-page">
+
+        <h1 class="name">Alex Chun</h1>
+        <p class="text">WEB DEVELOPER</p>
+        <a class="btn btn-outline-dark fs-5 text" href="./Projects.html" role="button">Projects</a>
+        
+            <div class="icons"> 
+                <a href="https://github.com/alexgchun" target="_blank"><i class="icon fab fa-github fa-4x"></i></a>
+                <a href="https://www.linkedin.com/in/alexgchun/" target="_blank"><i class="icon fab fa-linkedin fa-4x"></i></a>
+                <a class="icon btn btn-outline-dark fs-5 text"
+                    href="https://docs.google.com/document/d/1bUbVnf3rsHHmrgqIRH8Vl5I5RaW4F8EiVmYzJYbMF54/edit?usp=sharing"
+                    target="_blank" role="button">Resume</a>
+            </div>
+           
+        
+<footer>
     
-    <!-- head -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width" />
-        <title>Alex Chun's Portfolio</title>
-        <link rel="stylesheet" type="text/css" href="HTML_CSS_Final.css">
-    </head>
+    <span><i class="fas fa-phone"> </i> (805)377-3916</span>
+    <span><i class="fas fa-envelope"> </i> <a class="emial" href="mailto:alexgchun@gmail.com">alexgchun@gmail.com</a>
+    </span>
+</footer>
+</div>
 
-    <!-- body -->
-    <body class="Background">   
-<script src="portfolio.js" defer></script>
-        <!-- navbar -->
-        <div class="Navbar">
-            <a class="active" href="#Home">Home</a>
-            <!-- section added -->
-            <a href="#Slideshow">Slideshow</a>
-            <a href="#About">About</a>
-            <a href="#GitHub">GitHub</a>
-            <!-- Onclick and ondblclick functions added to open and close the contact form -->
-            <a onclick="openForm()" ondblclick="closeForm()">Contact</a>
-        </div>
+<script src="index.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
 
-        <!-- background video -->
-        <div id="Home">
-            <video autoplay muted loop id="Typing_Video">
-                <source src="./images/video/Pexels Videos 946146.mp4" type="video/mp4">
-                <!-- Display message if video fails to run -->
-                Your browser does not support HTML5 video.
-            </video>
-        </div>
+</body>
 
-        <!-- video text -->
-        <div class="Video_Text">
-            <h1 class="white-text">Alex Chun's Portfolio</h1>
-            <strong>
-                <p class="center">
-                    <p>
-                        "Skills can be taught. Character you either have or you don't have."
-                              </p>
-                              <cite>- Anthony Bourdain</cite>
-                            </blockquote>
-                            <p>
-                              My name is Alex Chun. Welcome to my portfolio website. On it, I will tell you about my background and experience.
-                            </p>
-                            <p>
-                              Thank you for stopping by and enjoy! 
-                            </p>
-                </p>
-            </strong>
-        </div>
-
-
-
-
-
-        
-        <!-- Slideshow section added -->
-        <div id="Slideshow">
-            <div id="Slideshow_Background"> 
-                <div id="Slideshow_Container">
-                    <!-- Slide 1 of 6 --> 
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/me.png" alt="Picture of yourself">
-                        <div class="text">I'm available to assist on your project!</div>
-                    </div>
-                    <!-- Slide 2 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/download (1).png" alt="HTML, CSS, and JS logos"> 
-                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
-                    </div>
-                    <!-- Slide 3 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/python.png" alt="Python logo">
-                        <div class="text">the popular programming language Python,</div>
-                    </div>
-                    <!-- Slide 4 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/net.png" alt="C# logo">
-                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
-                    </div>
-                    <!-- Slide 5 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/sql.png" alt="SQL logo"> 
-                        <div class="text">back end development, databases and SQL.</div>
-                    </div>
-                    <!-- Slide 6 of 6 -->
-                    <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="images/contact.png" alt="Replace with a picture of your choosing"> 
-                        <div class="text"><a class="white-text" onclick="openForm()" href="#Contact">Contact me now!</a></div> 
-                    </div>
-
-                    <!-- Previous and next buttons -->
-                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br> <!-- Adds a space between the slideshow images and the dots -->
-
-                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
-                <div style="text-align: center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    <span class="dot" onclick="currentSlide(5)"></span> 
-                    <span class="dot" onclick="currentSlide(6)"></span> 
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-        <!-- About section -->
-        <div class="Row" id="About">
-            <!-- Left column -->
-            <div class="Column_2">
-                <img src="pexels-kevin-ku-577585.jpg" alt="picture">
-            </div>
-            <!-- Right column -->
-            <div class="Column_1">
-                <h1>About</h1>
-                <p>
-                    I am an aprising software developer! I enjoy traveling, bouldering, skateboarding, surfing, and playing my ukelele 
-                    <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Python Boot Camp, and I am currently learning the following web and programming languages: HTML, CSS, JavaScript, SQL, Python, and more. 
-                    <br>
-                    <br>I am learning to become a full-stack developer and would love to work with you on your project. <a onclick="openForm()">Contact</a> me below!
-                </p>
-            </div>
-        </div>
-
-        <!-- GitHub section -->
-        <div class="Row" id="GitHub">
-            <!-- Left column -->
-            <div class="Column_1">
-                <h1>GitHub</h1>
-                <p>You can view my coding projects on my GitHub profile here:
-                    <br>
-                    <p class="center"><a href="https://github.com/alexgchun" target="_blank">The Tech Academy Github</a></p>
-                </p>
-            </div>
-            <!-- Right column -->
-            <div class="Column_2">
-                <a href="https://github.com/alexgchun" target="_blank"><img src="images/github-6615451_1920.png"></a>
-            </div>
-        </div>
-
-        <!-- Contact form -->
-        <div id="Contact">
-           <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-           <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
-                    <h1>Contact</h1>
-                    <label for="name"><b>Name</b></label>
-                      <input type="text" placeholder="Type your name here" name="name" required>
-                    <label for="phone"><b>Phone</b></label>
-                      <input type="text" placeholder="Type your phone number here" name="phone">
-                    <label for="email"><b>Email</b></label>		
-                      <input type="text" placeholder="Type your email address here" name="email" required>
-                    <label for="message"><b>Message</b></label>
-                      <input type="text" placeholder="Type your message here" name="message">
-         
-                    <button type="submit" class="btn">SUBMIT</button>
-                    <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
-                </form>
-           </div>
-        </div>
-        
-        <!-- Footer section -->
-        <footer>
-            <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p><br>
-            <p class="center">My <a href="https://docs.google.com/document/d/1bUbVnf3rsHHmrgqIRH8Vl5I5RaW4F8EiVmYzJYbMF54/edit?usp=sharing" target="_blank">Resume</a></p><br>
-            <p class="center">My <a href="https://www.linkedin.com/in/alexgchun/" target="_blank">Linkedin</a></p><br>
-        </footer>
-        <script src="JS/sample_portfolio.js"></script>
-    </body>
 </html>
+
+<!-- MAKE THIS SHIT RESPONSIVE-->
+<!--FOOTER EMAIL PHONE UNMBER ROBOTO MONO EMAIL LINK-->

@@ -1,0 +1,40 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #26324a;
+  color: White;
+}
+
+.bg-dark {
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+nav {
+  width: 100%;
+}
+
+.nav-link {
+  margin: 15px 20px;
+}
+
+.header {
+  font-weight: 50;
+  letter-spacing: 2px;
+  font-size: 100px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.row {
+  height: auto;
+}

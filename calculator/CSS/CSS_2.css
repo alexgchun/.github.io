@@ -1,0 +1,26 @@
+html {
+    font-family: Arial, Helvetica, sans-serifs;
+}
+
+form {
+    padding: 50px 40px;
+    background-color: lightpink;
+    margin: 60px 250px;
+}
+
+.name input{
+    width: 100%;
+    padding: 10px 7px;
+    margin: 10px auto;
+    border-radius: 3%;
+    border:lightsteelblue solid 1px;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 12px 0;
+}
+
+.submit input {
+    margin-top: 12px;
+}

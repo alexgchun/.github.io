@@ -210,10 +210,11 @@ body.dark {
 }
 
 .card-body.dark {
-   background-color: #292c35;
-   color: #fff;
+   background-color: #292c35 !important;
+   color: #fff !important;
  } 
 
  .about {
    margin-top: 10px;
  }
+

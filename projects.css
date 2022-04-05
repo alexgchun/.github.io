@@ -1,45 +1,181 @@
-html,
-body {
-  width: 100%;
-  height: auto;
-  font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #26324a; */
-  color: White;
+body{
+background-color:rgb(237, 237, 237)
 }
 
-.bg-dark {
-  width: 100%;
-  height: 100%;
-  color: white;
+.tab-btn {
+  display: block;
+  border: 2px solid rgb(170, 125, 255);
+  color: rgb(156, 95, 174);
+  border-radius: 14px;
+  font-family: Roboto Mono;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 3px 8px;
+}
+.tab-btn.active{
+  /* background-color: brown; */
+  border-color: greenyellow;
+  color: rgb(2, 172, 2);
 }
 
-nav {
-  width: 100%;
-  height: auto;
+.tab-btn:hover {
+color: rgb(79, 187, 255);
+border-color:lightskyblue;
 }
 
-.nav-link {
-  margin-top: 55px;
-  margin-left: 30px;
+.content {
+  display: none;
 }
 
+.content.active{
+  display: block;
+}
+
+/* align content */
+
+.container1 {
+
+/* background-color: red; */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button-container {
+  display: flex;
+  width: 800px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.content-container {
+  width: 800px
+}
+
+/* TITLE */
+.title-text {
+  font-size: 50px;
+  font-family: Roboto Mono;
+  font-weight: 300;
+  /* margin-top:0; */
+}
+
+@media screen and (min-width: 1536px) {
+
+}
+
+/* columns */
+.column {
+  float: left;
+  font-family: Roboto Mono;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* header */
 .header {
-  font-weight: 50;
-  letter-spacing: 5px;
-  font-size: 125px;
-  margin-bottom: 50px;
-  margin-left: 35px;
+  display:flex;
+  justify-content: center;
 }
 
-.container {
-  width: 100%;
-  height: auto;
+.image {
+  border-radius: 12px;
+  margin-top: 22px;
+  transition: transform .3s;
+  transition: box-shadow .5s;
 }
 
-.row {
-  height: auto;
+.image:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 140px rgba(62, 23, 255, 0.2);
 }
 
-.card {
-  margin-bottom: 20px;
+.left > h1 {
+  margin: 0
+}
+
+.left > p {
+ line-height: 35px;
+ letter-spacing: 1px;
+ margin-right: 18px;
+}
+
+/* link */
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: rgb(104, 104, 255);
+}
+
+.tech {
+  margin-top: 10px;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.tech > div {
+border: 1px solid black;
+border-radius: 4px;
+padding: 2px 5px;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+.github {
+display:flex;
+justify-content: center;
+align-items: center;
+margin-top: 10px;
+}
+
+.github > a {
+border: 1px solid black;
+border-radius: 4px;
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 2px;
+text-decoration: none;
+color: black;
+
+}
+
+.github > a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* nav */
+
+.nav {
+height: 70px;
+margin-top: 20px;
+}
+
+.nav > a {
+  font-family: Roboto Mono;
+  margin: 14px 25px;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.nav > a:hover {
+  background-color:rgb(149, 211, 250);
+  color:bisque;
 }

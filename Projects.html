@@ -7,177 +7,146 @@ https://www.youtube.com/watch?v=qNf6NaMPVfk&ab_channel=SarahAmann 5:24
 -->
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/
+    font-awesome/5.15.2/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="./projects.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@300;600;700&family=Shizuru&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/Yohproject-Cute-Star.ico">
         <title>Projects</title>
 </head>
 <body>
-<div class="">
+
     <nav class="nav">
-    <a class="nav-link active button" href="index.html" role="button">HOME</a>
-    <!--blue circle animation-->
-</nav>
+        <a class="nav-link" href="index.html" role="button">HOME</a>
+    </nav>
 
-<div class="heading">
-    <h1 class="header">Projects</h1>
-</div>
+    <div class="header">
+        <h1 class="title-text">Projects</h1>
+        <p></p>
+    </div>
 
+    <div class="container1">
+        <div class="project-container">
+            <div class="button-container">
+                <button class="tab-btn active" data-id="Tenzies">Tenzies</button>
+                <button class="tab-btn" data-id="Quizzical">Quizzical</button>
+                <button class="tab-btn" data-id="Life Style Site">Life Style Site</button>
+                <button class="tab-btn" data-id="Coming Soon"> Coming Soon</button>
+            </div>
+            <!-- <div class="image-container">
+                <a><img /></a>
+                <a><img /></a>
+                <a><img /></a>
+                <a><img /></a>
+            </div> -->
+            <div class="content-container">
+                <div class="content active" id="Tenzies">
+                   <div class="row">
 
-
-<div class="container">
-    <div class="row">
-        <div class="col-lg">
-            <a href="./Bouldering/Bouldering.html" target="_blank">
-                <div class="card text-white">
-                    <img src="./images/Screenshot (74).png"
-                        class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Life Style Site with Openweathermap API</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident magni voluptatem dolorum?.</p>
+                        <div class="column left">
+                            <h1>Tenzies</h1>
+                            <p>This is the final guided project of the <b><a class="link" target="_blank" href="https://scrimba.com/learn/learnreact">Free React course on Scrimba</a></b>. It's a clicking game that has many features such as <b>hooks</b>, <b>conditional rendering</b>, a counter, a timer, and a <b>local storage scoreboard</b>.</p>
+                        </div>
                         
+                        <div class="column right">
+                            <a target="_blank" href="https://subtle-dango-524816.netlify.app/"><img class="image" src="./images/tenzies.png" alt="" width="320px"></a>
+                            <div class="github">
+                                <a target="_blank" href="https://github.com/alexgchun/tenzies-react">Github</a>
+                            </div>
+                            <div class="tech">
+                                <div>React</div>
+                                <div>JavaScript</div>
+                                <div>HTML5</div>
+                                <div>CSS</div>
+                                <div>Grid</div>
+                                <div>Flex Box</div>
+                                <div>npm</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="content" id="Quizzical">
+                    <div class="row">
+
+                        <div class="column left">
+                            <h1>Quizzical</h1>
+                            <p>This is the final solo project of the <b><a class="link" target="_blank" href="https://scrimba.com/learn/learnreact">React course on Scrimba</a></b>.  This project makes use of React components, React hooks (<b>useState</b> and <b>useEffect</b>), and fetches data (5 questions) from the <b><a href="https://opentdb.com/" target="_blank" class="link">Open Trivia Database API</a></b>.
+                            It also makes use of two external react libraries, <b><a target="_blank" href="https://www.npmjs.com/package/nanoid-generate" class="link">Nano ID</a></b> and <b><a class="link" target="_blank" href="https://www.npmjs.com/package/html-entities">HTML Entities</a></b>.</p>
+                        </div>
+                        
+
+                        <div class="column right">
+                            <a target="_blank" href="https://majestic-fenglisu-72dc22.netlify.app/"><img class="image" src="./images/quizzical.png" alt="" width="320px"></a>
+                            <div class="github">
+                                <a target="_blank" href="https://github.com/alexgchun/quizzical">Github</a>
+                            </div>
+                            <div class="tech">
+                                <div>React</div>
+                                <div>JavaScript</div>
+                                <div>HTML5</div>
+                                <div>CSS</div>
+                                <div>Open Trivia Database API</div>
+                                <div>Flex Box</div>
+                                <div>npm</div>
+                            </div>
+                        </div>
+
+                    </div>
+                            
+                </div>
+                <div class="content" id="Life Style Site">
+                    <div class="row">
+
+                        <div class="column left">
+                            <h1>Life Style Site</h1>
+                            <p>This is a Life Style Site that uses the <b><a target="_blank" href="https://openweathermap.org/api" class="link">Open Weather Map API</a></b>. It allows you to geolocate your location in latitude and longitude using a built in JavaScript Method. It has features like a dark mode button, a form using <b>Formspree</b>, and a back to top button.</p>
+                        </div>
+                        
+
+                        <div class="column right">
+                            <a target="_blank" href="./Bouldering/Bouldering.html"><img class="image" src="./images/Life.png" alt="" width="320px"></a>
+                            <div class="github">
+                                <a target="_blank" href="https://github.com/alexgchun/Live-Project">Github</a>
+                            </div>
+                            <div class="tech">
+                                <div>JavaScript</div>
+                                <div>HTML5</div>
+                                <div>CSS</div>
+                                <div>Openweathermap API</div>
+                                <div>Flex Box</div>
+                                <div>Bootstrap</div>
+                                <div>Formspree</div>
+                            </div>
+                        </div>
+                    </div>
                     
-                    </div>
                 </div>
-            </a>
-        </div>
-        <div class="col-lg">
-            <a href="https://festive-kowalevski-fd9fd2.netlify.app/" target="_blank">
-                <div class="card text-white">
-                    <img src="./images/Screenshot (75).png" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">React Todo App</h5>
-                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis sunt expedita pariatur ipsa nostrum.</p>
+                <div class="content" id="Coming Soon">
+                    <div class="row"> 
+
+                        <div class="column left">
+                            <h1>Coming Soon</h1>
+                            <p>I plan on doing a project that involves React Router, CSS-in-JS, using Next.js or Gatsby, and hopefully apply more hooks.</p>
+                        </div>
                         
+
+                        <div class="column right">
+                            <a href=""></a>
+                        </div>
+
                     </div>
+                   
                 </div>
-            </a>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg">
-            <a href="./tic tac tor/TicTactoe.html" target="_blank">
-                <div class="card text-white">
-                    <img src="./images/Screenshot (76).png"
-                        class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Tic Tac Toe</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nemo recusandae dolores?</p>
-                       
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-lg">
-            <a href="./calculator/calculator.html" target="_blank">
-                <div class="card text-white">
-                    <img src="./images/Screenshot (77).png"
-                        class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Calculator</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit error incidunt repudiandae.</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
+        <script src="./projects.js"></script>
 </body>
 
 </html>
-
-<!-- color gradient, dark blue to light blue-->
-
-
-<!--    <div class="row">
-        <div class="col-sm">
-            <a href="">
-                <div class="card bg-dark text-white">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2NhcGBJRr_lfVEjUDV1fPwHaEK%26pid%3DApi&f=1" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="">
-                <div class="card bg-dark text-white">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2NhcGBJRr_lfVEjUDV1fPwHaEK%26pid%3DApi&f=1" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
-                        </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <a href="">
-                <div class="card bg-dark text-white">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2NhcGBJRr_lfVEjUDV1fPwHaEK%26pid%3DApi&f=1" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="">
-                <div class="card bg-dark text-white">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2NhcGBJRr_lfVEjUDV1fPwHaEK%26pid%3DApi&f=1" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm">
-            <a href="">
-                <div class="card bg-dark text-white">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2NhcGBJRr_lfVEjUDV1fPwHaEK%26pid%3DApi&f=1" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="col-sm">
-            <a href="">
-                <div class="card bg-dark text-white">
-                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.2NhcGBJRr_lfVEjUDV1fPwHaEK%26pid%3DApi&f=1" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>-->

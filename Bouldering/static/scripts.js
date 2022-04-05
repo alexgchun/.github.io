@@ -21,6 +21,7 @@ checkbox.addEventListener('change', () => {
     document.getElementById('card-body').classList.toggle('dark');
     document.getElementById('card-body2').classList.toggle('dark');
     document.getElementById('card-body3').classList.toggle('dark');
+
 })
 
 
@@ -114,9 +115,6 @@ const app = {
             }&deg;</p>
                     <p class="card-text">Sunrise ${sr}</p>
                     <p class="card-text">Sunset ${ss}</p>
-                    <button id="btnGear" onclick="getGear()" type="button" class="btn btn-primary mb-3">
-                    Get Gear
-                    </button>
                   </div>
                 </div>
               </div>
@@ -129,12 +127,11 @@ const app = {
   
 app.init();
 
-function getGear() {
-  let daysWeather = document.querySelector(".gear").innerText
-  if (daysWeather == "Rain"){
-    console.log("hello")
-  }
-}
+
+ // <button id="btnGear" onclick="getGear()" type="button" class="btn btn-primary mb-3">
+                    // Get Gear
+                    // </button>
+
 //ask forest about data vs resp
 /*
 button -> GET GEAR

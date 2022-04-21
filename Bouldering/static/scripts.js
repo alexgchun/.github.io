@@ -12,17 +12,17 @@ window.addEventListener("scroll", () => {
 })
 //toggle
 
-const checkbox = document.getElementById("checkbox");
+// const checkbox = document.getElementById("checkbox");
 
 
-checkbox.addEventListener('change', () => {
-    //change theme of website
-    document.body.classList.toggle('dark');
-    document.getElementById('card-body').classList.toggle('dark');
-    document.getElementById('card-body2').classList.toggle('dark');
-    document.getElementById('card-body3').classList.toggle('dark');
+// checkbox.addEventListener('change', () => {
+//     //change theme of website
+//     document.body.classList.toggle('dark');
+//     document.getElementById('card-body').classList.toggle('dark');
+//     document.getElementById('card-body2').classList.toggle('dark');
+//     document.getElementById('card-body3').classList.toggle('dark');
 
-})
+// })
 
 
 //API
